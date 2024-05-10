@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  height: 700px;
+  width: 900px;
+}
+
+body {
+  background-image: url("../images/galaxy.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.pic1{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  animation: planet 15s infinite;
+}
+
+.div1{
+  z-index: 100;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 100px;
+  left: 150px;
+  border-radius: 100%;
+}
+
+
+
+.pic2{
+  width: 150px;
+  height: 150px;
+  animation: planet 15s infinite;
+}
+
+
+.div3{
+    z-index: 100;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    bottom: 100px;
+    left: 900px;
+    
+  }
+
+
+.rocket{
+  width: 70px;
+  height: 70px;
+}
+
+.div4{
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: 400px;
+  left: 870px;
+  transform: rotate(-40deg);
+  animation: anim1 20s infinite;
+
+}
+
+@keyframes anim1{
+   0%{bottom: 400px; left: 870px;}
+   10%{bottom: 550px; left: 550px}
+   30%{bottom: 480px; left: 300px;}
+   45%{bottom: 440px; left: 300px;}
+   50%{bottom: 435px; left: 300px; transform: rotate(40deg);}
+   60%{bottom: 450px; left: 300px; transform: rotate(120deg);}
+   70%{bottom: 480px; left: 300px; transform: rotate(120deg);}
+   85%{bottom: 550px; left: 550px; transform: rotate(120deg)}
+   100%{bottom: 400px; left: 870px; transform: rotate(-40deg)}
+}
+
+@keyframes planet{
+ from{transform: rotate(0deg);}
+ to{transform: rotate(360deg);}
+}
+
+
+.dot1{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 300px;
+  right: 40px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+}
+
+@keyframes star1{
+ from{background-color: rgba(19, 2, 58, 0.644);}
+ to{background-color:  rgb(255, 255, 255);}
+} 
+
+.spacecar{
+  display: inline-block;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+
+.img1{
+  width: 100px;
+  height: 100px; 
+  z-index: 100;
+  position: relative;
+  transform: rotate(-40deg);
+  animation: car1 10s infinite;
+}
+
+@keyframes car1{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+ }
+ 
+ .dot2{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 400px;
+  right: 70px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+
+ .dot3{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 600px;
+  right: 190px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+ .dot4{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 500px;
+  right: 400px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+ .dot5{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 600px;
+  right: 400px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+ .dot6{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 600px;
+  right: -80px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+ .dot7{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 200px;
+  right:270px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+ .dot8{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 160px;
+  right: 90px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+ .dot9{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 100px;
+  left: 20px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+
+ 
+ .dot10{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 100px;
+  left: 50px;
+  z-index: 100; 
+  background-color: rgba(19, 2, 58, 0.644);
+  border-radius: 20px;
+   animation: star1 1s infinite;
+ }
+
+
+
